@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6000567279620104331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6000567279619751083}
+  - component: {fileID: 6000567279621078155}
+  - component: {fileID: 6000567279622045259}
+  - component: {fileID: 7414694349885687942}
+  m_Layer: 0
+  m_Name: weapon_glock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6000567279619751083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000567279620104331}
+  m_LocalRotation: {x: -0.7071067, y: -0.00000016197237, z: -0.00000006229704, w: 0.7071069}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.42284146, y: 0.42284158, z: 0.42284134}
+  m_Children:
+  - {fileID: 3033475325549131987}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6000567279621078155
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000567279620104331}
+  m_Mesh: {fileID: 4300000, guid: 2f7c5e1ce7bc56e4b8897a1309e6d1bd, type: 3}
+--- !u!23 &6000567279622045259
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000567279620104331}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c68041e87bff774592fac4db61f8a53, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &7414694349885687942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000567279620104331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5312ba81060359f44b6dbc1878cb4c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBullet: 30
+  shot_hand_gun: {fileID: 8300000, guid: f6cb1f581b7444b23a05b613a16420d5, type: 3}
+  changeBullet: {fileID: 8300000, guid: bd6c529e86fd29a4297afbc6db2d030b, type: 3}
+  ps: {fileID: 3033475325731769975}
+  Damage: 60
+  hasFireModel: 0
+  FireModel_Signal: 1
+  weaponName: "\u683C\u6D1B\u514B"
+  Glock_texture: {fileID: 2800000, guid: 96e94ba5bb8120f45b5dc78a104bd5ab, type: 3}
+--- !u!1001 &5990018340587110891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6000567279619751083}
+    m_Modifications:
+    - target: {fileID: 8735224390054454552, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_Name
+      value: HandGunEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000015832484
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000012293458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8f097a73b2c84444879b5819582f333, type: 3}
+--- !u!4 &3033475325549131987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8735224390054164792, guid: f8f097a73b2c84444879b5819582f333,
+    type: 3}
+  m_PrefabInstance: {fileID: 5990018340587110891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3033475325731769975 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8735224389842407324, guid: f8f097a73b2c84444879b5819582f333,
+    type: 3}
+  m_PrefabInstance: {fileID: 5990018340587110891}
+  m_PrefabAsset: {fileID: 0}
